@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $query = "SELECT * FROM usuarios WHERE id='$id' AND clave='$clave'";
     $resultado = $CONEXION->query($query);
 
-    if($resultado->num_rows == 1){
+    if($resultado->num_rows){
         $usuario = $resultado->fetch_assoc();
 
         session_start();
