@@ -18,6 +18,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             header("Location: /Restaurante/pages/admin/Administrador.php");
         }elseif($usuario["rol"] == 1){
             header("Location: /Restaurante/pages/MenuCliente.php");
+        }elseif($usuario["rol"] == 2){
+            header("Location: /Restaurante/pages/MenuCajero.php");
+        }elseif($usuario["rol"] == 3){
+            header("Location: /Restaurante/pages/MenuChef.php");
         }
         exit;
     }else{
