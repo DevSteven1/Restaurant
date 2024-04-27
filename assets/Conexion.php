@@ -7,6 +7,6 @@ $DATA_BASE = "restaurantephp";
 $CONEXION = new mysqli($SERVER,$USER,$PASSWORD,$DATA_BASE);
 
 if($CONEXION -> connect_error){
-    die("Error de conexion: " . $CONEXION -> connect_error);
+    header("Location: /Restaurante/pages/errors/ErrorConexionDb.php");
 }
 ?>
