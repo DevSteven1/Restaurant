@@ -1,3 +1,1 @@
-#Al iniciar a usar tailwind hay poner este comando para realizar el postprocesado
-
--npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"# Restaurant" 
+#Ojo Faltan los temas de seguridad e injeccion sql porfavor hacelos;
