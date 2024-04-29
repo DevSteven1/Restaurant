@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-$response = file_get_contents('http://localhost/Restaurante/assets/getUsuarios.php');
+$response = file_get_contents('http://localhost/Restaurante/assets/usersHttp/ObtenerUsuarios.php');
 
 $usuarios = json_decode($response, true);
 
